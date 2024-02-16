@@ -94,13 +94,3 @@ if query:
     st.audio('audio.wav', start_time=0)
     os.remove("audio.wav")
 
-# '''
-# 以下代码删除所有indexes模块，默认注释关闭，谨慎使用
-# '''
-# Are you sure you want to delete this? If yes, delete this line of code
-# # deleting all indexes
-# pinecone.init(
-#     api_key=PINECONE_API_KEY,
-#     environment=PINECONE_API_ENV
-# )
-# pinecone.Index('dental').delete(delete_all=True)
