@@ -40,7 +40,7 @@ import gtts #文字转语音
 # embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
 # # initialize pinecone
-# # 把数字放进向量数据库，environment填写数据库所在的位置
+# # 把数字放进向量数据库
 # pinecone.init(
 #     api_key=PINECONE_API_KEY,
 #     environment=PINECONE_API_ENV
@@ -53,7 +53,6 @@ import gtts #文字转语音
 
 
 # App framework
-# 如何创建自己的网页机器人
 st.title('Ask知鸟') #用streamlit app创建一个标题
 # 创建一个输入栏让用户输入问题
 query = st.text_input('欢迎来到Ask知鸟,你可以问我关于企业培训或知鸟的问题，例如：介绍一下平安知鸟？')
